@@ -1,0 +1,258 @@
+/* main box which has boxshadow property */
+.main_container {
+  width: 95%;
+  height: 82vh;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* main table which is inside main box and it holds the content */
+.main_table {
+  width: 100%;
+  height: 70vh;
+  overflow: scroll;
+}
+/* table header row */
+.main_table_head {
+  width: 1595px;
+  height: 3rem;
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 145px 145px 145px 145px 145px 145px 145px 145px 145px 145px 145px;
+  font-size: 12px;
+  border-top: 1px solid var(--bg-primary-color);
+}
+
+/* table header inside css detail  */
+.main_table_head > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-right: 1px solid black;
+}
+
+/* the div that is present inside the middle of the line and has down arrow */
+.day_h {
+  background-color: #efefef;
+  color: var(--primary-color);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+/* the table each row  */
+.main_table_row {
+  width: 1595px;
+  height: 3rem;
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 145px 145px 145px 145px 145px 145px 145px 145px 145px 145px 145px;
+  font-size: 12px;
+  border-top: 1px solid var(--bg-primary-color);
+}
+
+.main_table_row > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-right: 1px solid black;
+}
+
+/* the div that is present in the middle of the line */
+.day {
+  background-color: var(--bg-primary-color);
+  color: white;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+/* the table pagination container */
+.main_table_pagination {
+  width: 65%;
+  height: 3rem;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* the div that i am seeing inside the pagination container show page of 124 */
+.main_table_pagination > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.main_table_pagination > div > div {
+  width: 40px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--bg-primary-color);
+  cursor: pointer;
+}
+
+/* scroll bar that i am seeing  */
+
+::-webkit-scrollbar {
+  width: 7px;
+  /* width of the scrollbar */
+  height: 7px;
+  /* height of the scrollbar */
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-color: 1px solid #888;
+  /* color of the scrollbar track */
+}
+
+/* this is the box that conatining the inputs and the buttons */
+
+.main_table_top {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_table_top > p {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 37.5px;
+  color: var(--bg-primary-color);
+}
+
+/* .main_table_top_content */
+.main_table_top > div:nth-child(2) {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+/* this is the div that className is input */
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  border: 1px solid #a8abc2;
+  border-radius: 5px;
+}
+
+.input > input {
+  width: 85%;
+  height: 100%;
+  padding-inline: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+}
+
+.input2 {
+  width: 46px;
+  height: 44px;
+  background-color: #5b5d6e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* i am hiding this when this is desktop and enabling it when it is mobile and tab */
+
+.main__table_mobile_top {
+  display: none;
+}
+
+/* this is the sort div present inside the header each cell */
+.main_table_head_sort {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main_table_head_sort > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+@media ((min-width: 0px) and (max-width:900px)) {
+  /* in the mobile make it block means visible */
+  .main_table_top {
+    display: block;
+  }
+
+  /* making it invisible */
+  .main_table_top_content {
+    display: none !important;
+  }
+
+  .main__table_mobile_top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: 1rem;
+  }
+
+  .main_container {
+    margin-top: 16rem;
+  }
+
+  .btn_group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .app_bx {
+    padding: 2rem 0.5rem !important;
+  }
+}

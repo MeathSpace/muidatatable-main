@@ -1,8 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.app_bx {
+  padding: 2rem;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --bg-primary-color: #565a75;
+  --column-color-1: #0d1d7e1a;
+  --column-color-2: #fb2b0f1a;
+  --column-color-3: #f472401a;
+  --column-color-4: #fdf5261a;
+  --column-color-5: #1bc39b1a;
+  --column-color-6: #16e6f31a;
 }
 
 .idColumn {
